@@ -216,13 +216,103 @@ body {
 
   .fc-offers {
     width: 100%;
-    height: 500px;
-    margin-top: 60px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    .fc-offer {
+      @media screen and (max-width: 650px) {
+        margin-top: 30px;
+      }
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .fc-offer-img {
+        @media screen and (max-width: 650px) {
+          flex-basis: 100%;
+        }
+        min-height: 350px;
+        display: flex;
+        flex: 1 1 0px;
+        background: url('../../image/laptop.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .fc-offer-content {
+        min-height: 350px;
+        color: #000;
+        background-color: #FFF;
+        display: flex;
+        flex: 1 1 0px;
+        justify-content: center;
+        flex-direction: column;
+
+        .fc-offer-content-title {
+          @media screen and (max-width: 799px) {
+            width: 90%;
+          }
+          @media screen and (max-width: 1000px) {
+            width: 80%;
+          }
+          @media screen and (min-width: 1001px) {
+            width: 70%;
+          }
+          margin: 10px auto;
+          font-weight: 600;
+          font-size: 29px;
+        }
+
+        .fc-offer-content-description {
+          @media screen and (max-width: 799px) {
+            width: 90%;
+          }
+          @media screen and (max-width: 1000px) {
+            width: 80%;
+          }
+          @media screen and (min-width: 1001px) {
+            width: 70%;
+          }
+          margin: 20px auto;
+          font-weight: 400;
+          font-size: 22px;
+        }
+
+        .fc-offer-content-button-box {
+          @media screen and (max-width: 799px) {
+            width: 90%;
+          }
+          @media screen and (max-width: 1000px) {
+            width: 80%;
+          }
+          @media screen and (min-width: 1001px) {
+            width: 70%;
+          }
+          margin: 20px auto;
+          .fc-offer-content-button {
+            display: block;
+            width: fit-content;
+            height: fit-content;
+            animation: show .7s ease-in;
+            font-size: 22px;
+            font-weight: 700;
+            padding: 15px 20px;
+            background-color: #FED766;
+            &:hover {
+              cursor: pointer;
+              background-color: #EDC655;
+            }
+        }
+      }
+    }
   }
+}
 }
 
 @keyframes show {
