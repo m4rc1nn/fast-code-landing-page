@@ -1,0 +1,85 @@
+.fc-project-box {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.fc-project-box .fc-project {
+  width: 280px;
+  margin: 20px;
+}
+.fc-project-box .fc-project:nth-child(1) .fc-project-background .fc-project-img-box .fc-project-img {
+  height: 250px;
+  width: 250px;
+  background: url("../../image/stealer.jpg");
+  background-color: #ccc;
+  background-position: center center;
+  background-size: cover;
+}
+.fc-project-box .fc-project:nth-child(2) .fc-project-background .fc-project-img-box .fc-project-img {
+  height: 250px;
+  width: 250px;
+  background: url("../../image/donation.jpg");
+  background-color: #ccc;
+  background-position: center center;
+  background-size: cover;
+}
+.fc-project-box .fc-project:nth-child(3) .fc-project-background .fc-project-img-box .fc-project-img {
+  height: 250px;
+  width: 250px;
+  background: url("../../image/ais.jpg");
+  background-color: #ccc;
+  background-position: center center;
+  background-size: cover;
+}
+.fc-project-box .fc-project .fc-project-background {
+  width: 100%;
+  background-color: #fff;
+}
+.fc-project-box .fc-project .fc-project-background .fc-project-img-box {
+  height: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fc-project-box .fc-project .fc-project-background .fc-project-title {
+  font-size: 24px;
+  padding: 10px 0px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+}
+.fc-project-box .fc-project .fc-project-background hr {
+  width: 100%;
+  border: 1px solid #000;
+  margin: 5px 0px;
+}
+.fc-project-box .fc-project .fc-project-background .fc-project-description {
+  margin: 0px auto;
+  text-align: center;
+  width: 90%;
+  color: #000;
+  font-size: 19px;
+}
+.fc-project-box .fc-project .fc-project-background .fc-project-button {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  font-size: 21px;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #fed766;
+  color: #000;
+  text-transform: uppercase;
+}
+.fc-project-box .fc-project .fc-project-background .fc-project-button:hover {
+  cursor: pointer;
+  background-color: #edc655;
+}/*# sourceMappingURL=project.css.map */

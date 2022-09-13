@@ -8,8 +8,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  -webkit-animation: show-alert 0.2s backwards;
-          animation: show-alert 0.2s backwards;
+  animation: show-alert 0.2s backwards;
 }
 .fc-alert-box:hover {
   cursor: pointer;
@@ -19,8 +18,7 @@
   z-index: 10000;
   background-color: #fff;
   border-radius: 5%;
-  -webkit-animation: show-content 0.3s backwards;
-          animation: show-content 0.3s backwards;
+  animation: show-content 0.3s backwards;
   display: flex;
   flex-direction: column;
 }
@@ -66,6 +64,7 @@
 .fc-alert-box .fc-alert-content .fc-alert-content-top .fc-alert-content-top-close-button span {
   transform-origin: 0% 0%;
   background-color: #000;
+  min-width: 27px;
   width: 100%;
   height: 1px;
 }
@@ -90,14 +89,8 @@
 .fc-alert-box .fc-alert-content .fc-alert-content-footer .fc-alert-content-footer-button {
   margin: 27px;
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
-  -webkit-animation: show 0.7s ease-in;
-          animation: show 0.7s ease-in;
   font-size: 18px;
   font-weight: 600;
   padding: 15px 20px;
@@ -109,32 +102,12 @@
   background-color: #EDC655;
 }
 
-@-webkit-keyframes show-alert {
-  from {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  to {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-}
-
 @keyframes show-alert {
   from {
     background-color: rgba(0, 0, 0, 0);
   }
   to {
     background-color: rgba(0, 0, 0, 0.5);
-  }
-}
-@-webkit-keyframes show-content {
-  0% {
-    transform: scale(0);
-  }
-  80% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 @keyframes show-content {

@@ -1,0 +1,38 @@
+.fc-benefit-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  .fc-benefit {
+    animation: show 1s ease-in;
+    width: 300px;
+    min-height: 300px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    .fc-benefit-icon {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        height: 60px;
+        padding: 5px 0px;
+      }
+    }
+
+    .fc-benefit-title {
+      font-weight: 600;
+      font-size: 26px;
+      margin-top: 15px;
+    }
+
+    .fc-benefit-description {
+      font-weight: 400;
+      font-size: 21px;
+      margin-top: 15px;
+    }
+  }
+}

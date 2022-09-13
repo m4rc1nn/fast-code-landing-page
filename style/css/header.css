@@ -1,0 +1,73 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .fc-logo-box {
+  width: 50%;
+  min-width: 200px;
+  margin-left: 5px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .fc-logo-box .fc-logo-img {
+  max-height: 50px;
+}
+header .fc-nav {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 1000px) {
+  header .fc-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+header .fc-nav .fc-nav-item {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #000;
+  border-bottom: 2px solid #fff;
+}
+@media screen and (max-width: 1000px) {
+  header .fc-nav .fc-nav-item {
+    display: none;
+  }
+}
+header .fc-nav .fc-nav-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+header .fc-nav .fc-nav-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+header .fc-nav .fc-nav-item:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=header.css.map */

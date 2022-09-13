@@ -19,81 +19,161 @@
         <div class="fc-nav-item">kontakt</div>
       </nav>
     </header>
-    <div class="fc-banner">
+    <div class="fc-banner-box">
       <div class="fc-banner-row">
         <div class="fc-banner-row-title">
-          Zaprezentuj swoją&nbsp;<span
+          Zaprezentuj się w internecie.
+          <!--<span
           class="txt-rotate"
           data-period="1000"
-          data-rotate='[ "firme", "usługe", "produkt" ]'></span>
-          &nbsp;w internecie
+          data-rotate='[ "firme", "usługe", "produkt" ]'></span>!-->
         </div>
         <div class="fc-banner-row-description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis deserunt sint molestias quisquam omnis blanditiis maxime eos a magni excepturi.
+          Rozwijanie firm, tworzenie stron, sklepów, akcji marketingowych, grafik komputerowych - to wszystko tylko z nami!
         </div>
         <div class="fc-banner-row-buttons">
-          <div class="fc-banner-row-button">ZOBACZ OFERTE</div>
-          <div class="fc-banner-row-button">SKONTAKTUJ SIĘ</div>
+          <div class="fc-banner-row-button" onclick="window.scrollTo({top: document.getElementsByClassName('fc-offer-box')[0].offsetTop - 95, left: 0, behavior: 'smooth'})">ZOBACZ OFERTE</div>
+          <div class="fc-banner-row-button" onclick="handleShow('contact');">SKONTAKTUJ SIĘ</div>
         </div>
       </div>
     </div>
-    <div class="fc-benefits">
-      <div class="fc-benefit-box">
+    <div class="fc-benefit-box">
+      <div class="fc-benefit">
         <div class="fc-benefit-icon">
           <img src="./image/benefit.svg" alt="Benefit icon">
         </div>
-        <div class="fc-benefit-title">Lorem ipsum</div>
-        <div class="fc-benefit-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat necessitatibus in maxime pariatur explicabo unde.</div>
+        <div class="fc-benefit-title">Wyróżniamy się</div>
+        <div class="fc-benefit-description">Znamy realia rynku, który jest bardzo przesycony, z nami wyróżnisz swoją firmę, dzięki niekonwecjonalnemu i indywidualnemu podejściu do każdej sprawy.</div>
       </div>
-      <div class="fc-benefit-box">
+      <div class="fc-benefit">
         <div class="fc-benefit-icon">
           <img src="./image/benefit.svg" alt="Benefit icon">
         </div>
-        <div class="fc-benefit-title">Lorem ipsum</div>
-        <div class="fc-benefit-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat necessitatibus in maxime pariatur explicabo unde.</div>
+        <div class="fc-benefit-title">Przejrzystość</div>
+        <div class="fc-benefit-description">Mamy doświadczenie w tworzeniu wartościowego kontentu, zleceniodawca zawsze ma dostęp do aktualnego statusu prac.</div>
       </div>
-      <div class="fc-benefit-box">
+      <div class="fc-benefit">
         <div class="fc-benefit-icon">
           <img src="./image/benefit.svg" alt="Benefit icon">
         </div>
-        <div class="fc-benefit-title">Lorem ipsum</div>
-        <div class="fc-benefit-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat necessitatibus in maxime pariatur explicabo unde.</div>
+        <div class="fc-benefit-title">Niuanse</div>
+        <div class="fc-benefit-description">Szczegóły odgrywają dla nas bardzo ważną role, u nas nie ma mowy na jakiekolwiek niedociągniecia. Każdy projekt realizujemy skuruplatnie w 100%.</div>
       </div>
     </div>
-    <div class="fc-offers">
+    <div class="fc-offer-box">
       <div class="fc-offer">
         <div class="fc-offer-img"></div>
         <div class="fc-offer-content">
-          <div class="fc-offer-content-title">Lorem ipsum</div>
-          <div class="fc-offer-content-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat necessitatibus in maxime pariatur explicabo unde.</div>
+          <div class="fc-offer-content-title">E-commerce</div>
+          <div class="fc-offer-content-description">Stworzymy dla Ciebie kompleksowy sklep internetowy i zajmiemy się jego obsługą, dostosujemy go do oczekiwań rynku, tak aby Twoje zyski były maksymalne!</div>
           <div class="fc-offer-content-button-box">
-            <div class="fc-offer-content-button" onclick="handleShow();">ZOBACZ WIĘCEJ</div>
+            <div class="fc-offer-content-button" onclick="handleShow('e-commerce');">ZOBACZ WIĘCEJ</div>
           </div>
         </div>
       </div>
       <div class="fc-offer">
         <div class="fc-offer-img"></div>
         <div class="fc-offer-content">
-          <div class="fc-offer-content-title">Lorem ipsum</div>
-          <div class="fc-offer-content-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat necessitatibus in maxime pariatur explicabo unde.</div>
+          <div class="fc-offer-content-title">Współprace</div>
+          <div class="fc-offer-content-description">Zaproponujemy Ci współpracę z największymi polskimi twórcami internetowymi, którzy mają wielotysięczne zasięgi, dzięki którym dotrzesz do ogromnej grupy osób.</div>
           <div class="fc-offer-content-button-box">
-            <div class="fc-offer-content-button" onclick="handleShow();">ZOBACZ WIĘCEJ</div>
+            <div class="fc-offer-content-button" onclick="handleShow('collaboration');">ZOBACZ WIĘCEJ</div>
           </div>
         </div>
       </div>
       <div class="fc-offer">
         <div class="fc-offer-img"></div>
         <div class="fc-offer-content">
-          <div class="fc-offer-content-title">Lorem ipsum</div>
-          <div class="fc-offer-content-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat necessitatibus in maxime pariatur explicabo unde.</div>
+          <div class="fc-offer-content-title">Prowadzenie fanpage</div>
+          <div class="fc-offer-content-description">Reklama przypominająca i informacyjna są najbardziej potrzebne w biznesie, takie możliwości daje własny profil firmy na popularnych social mediach.</div>
           <div class="fc-offer-content-button-box">
-            <div class="fc-offer-content-button" onclick="handleShow();">ZOBACZ WIĘCEJ</div>
+            <div class="fc-offer-content-button" onclick="handleShow('fanpage');">ZOBACZ WIĘCEJ</div>
+          </div>
+        </div>
+      </div>
+      <div class="fc-offer">
+        <div class="fc-offer-img"></div>
+        <div class="fc-offer-content">
+          <div class="fc-offer-content-title">Karty produktowe</div>
+          <div class="fc-offer-content-description">Przygotujemy dla Ciebie gotowe do zaimportowania szablony produktów na Twoim instniejącym już sklepie internetowym lub stworzymy je od zera.</div>
+          <div class="fc-offer-content-button-box">
+            <div class="fc-offer-content-button" onclick="handleShow('cards');">ZOBACZ WIĘCEJ</div>
+          </div>
+        </div>
+      </div>
+      <div class="fc-offer">
+        <div class="fc-offer-img"></div>
+        <div class="fc-offer-content">
+          <div class="fc-offer-content-title">Grafika komputerowa</div>
+          <div class="fc-offer-content-description">Indywidualnie dla Ciebie zaprojektujemy wszystkie materiały, czyli logo, baner, ulotke i wszystko inne co tylko będzie wymagał Twój biznes.</div>
+          <div class="fc-offer-content-button-box">
+            <div class="fc-offer-content-button" onclick="handleShow('graphics');">ZOBACZ WIĘCEJ</div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="fc-alert-box" onclick="handleExit();">
+    <p class="fc-projects-title">Nasze realizacje:</p>
+    
+    <div class="fc-project-box">
+      <div class="fc-project">
+        <div class="fc-project-background">
+          <div class="fc-project-img-box">
+            <div class="fc-project-img"></div>
+          </div>
+          <div class="fc-project-title">
+            Projekt Stealer
+          </div>
+          <hr>
+          <div class="fc-project-description">
+            Dwie strony, aplikacja mobilna i system zarządzający.
+          </div>
+          <div class="fc-project-button" onclick="handleShow('stealer');">
+            Zobacz pełny opis prac
+          </div>
+        </div>
+      </div>
+      <div class="fc-project">
+        <div class="fc-project-background">
+          <div class="fc-project-img-box">
+            <div class="fc-project-img"></div>
+          </div>
+          <div class="fc-project-title">
+            Donation system
+          </div>
+          <hr>
+          <div class="fc-project-description">
+            System zarządzający dotacjami dla twórców internetowych.
+          </div>
+          <div class="fc-project-button" onclick="handleShow('donation');">
+            Zobacz pełny opis prac
+          </div>
+        </div>
+      </div>
+      <div class="fc-project">
+        <div class="fc-project-background">
+          <div class="fc-project-img-box">
+            <div class="fc-project-img"></div>
+          </div>
+          <div class="fc-project-title">
+            Sklep e-commerce
+          </div>
+          <hr>
+          <div class="fc-project-description">
+            Obsuga sklepu internetowego "KUBUŚ" na platformie Allegro i Shoope.
+          </div>
+          <div class="fc-project-button" onclick="handleShow('ais');">
+            Zobacz pełny opis prac
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; Fastcode.pl | Realizacja <span style="text-decoration: underline;">Marcin&nbsp;Kowalczyk</span></p>
+    </footer>
+
+    <div class="fc-alert-box">
       <div class="fc-alert-content">
         <div class="fc-alert-content-top">
           <div class="fc-alert-content-top-header">
@@ -108,7 +188,7 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis ad alias cupiditate provident veniam numquam doloribus iusto earum ullam. Laudantium expedita dolorem tempora consequuntur esse unde quas assumenda! Amet, possimus.
         </div>
         <div class="fc-alert-content-footer">
-          <div class="fc-alert-content-footer-button">ZOBACZ WIĘCEJ</div>
+          <div class="fc-alert-content-footer-button" onclick="handleShow('contact');">SKONTAKTUJ SIĘ</div>
         </div>
       </div>
     </div>

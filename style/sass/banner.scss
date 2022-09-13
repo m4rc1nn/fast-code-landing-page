@@ -1,0 +1,101 @@
+.fc-banner-box {
+  margin-top: 60px;
+  position: relative;
+  height: 80%;
+  background: url("../../image/banner.jpg");
+  background-position: center center;
+  background-size: cover;
+  animation: show 0.7s ease-in;
+  .fc-banner-row {
+    @media screen and (min-width: 1001px) {
+      width: 65%;
+      max-width: 1150px;
+    }
+    @media screen and (max-width: 1000px) and (min-width: 800px) {
+      width: 75%;
+    }
+    @media screen and (max-width: 799px) {
+      width: 95%;
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
+    color: #272727;
+
+    .fc-banner-row-title {
+      @media screen and (min-width: 1001px) {
+        font-size: 56px;
+      }
+      @media screen and (max-width: 1000px) and (min-width: 800px) {
+        font-size: 42px;
+      }
+      @media screen and (max-width: 799px) {
+        font-size: 36px;
+      }
+      animation: show 0.7s ease-in;
+      font-weight: 700;
+      text-align: center;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+
+    .fc-banner-row-description {
+      @media screen and (min-width: 1001px) {
+        font-size: 25px;
+      }
+      @media screen and (max-width: 1000px) and (min-width: 800px) {
+        font-size: 21px;
+      }
+      @media screen and (max-width: 799px) {
+        font-size: 18px;
+      }
+      animation: show 0.7s ease-in;
+      margin-top: 20px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .fc-banner-row-buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .fc-banner-row-button {
+        @media screen and (min-width: 1001px) {
+          font-size: 25px;
+        }
+        @media screen and (max-width: 1000px) and (min-width: 800px) {
+          font-size: 21px;
+        }
+        @media screen and (max-width: 799px) {
+          font-size: 18px;
+        }
+        animation: show 0.7s ease-in;
+        font-weight: 700;
+        margin: 10px 15px;
+        padding: 15px 20px;
+        background-color: #fed766;
+        &:hover {
+          cursor: pointer;
+          background-color: #edc655;
+        }
+      }
+    }
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
